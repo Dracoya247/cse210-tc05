@@ -36,5 +36,5 @@ root                    (project root folder)
 ---
 Aria Menke: aria_menke@byui.edu 
 Ezra Vizcarra Mejia: <add email here> 
-Michael Romero-Carbajal : <add email here> 
+Michael Romero-Carbajal : <rom19011@byu.edu> 
 Daniel Gomez: <add email here>
