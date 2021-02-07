@@ -23,11 +23,6 @@ class Director():
         Args:
             self (Director): an instance of Director.
         """
-        """while self.keep_playing:
-            self.get_inputs()
-            self.do_updates()
-            self.do_outputs()"""
-
         word = word.get_word()
         ending = False
         play_game = True
