@@ -22,6 +22,6 @@ class word():
 
 class console():
     
-    #Anyone
+    #Daniel
 
     pass
