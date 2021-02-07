@@ -23,16 +23,36 @@ class Director():
         Args:
             self (Director): an instance of Director.
         """
-        while self.keep_playing:
+        """while self.keep_playing:
             self.get_inputs()
             self.do_updates()
-            self.do_outputs()
+            self.do_outputs()"""
 
-    def get_inputs(self):
-        pass
+        word = word.get_word()
+        ending = False
+        play_game = True
 
-    def do_updates(self):
-        pass
+        while play_game:
 
-    def do_outputs(self):
-        pass
+            console.write(word)
+
+            lives = jumper.get_parachute()				
+            console.write(lives)
+    
+            letter = console.read()	
+        
+            if word.guess(letter):
+                word.fill_letter(letter)
+            else:
+                jumper.cut_line()
+            
+            console.write(parachute)			
+            if word.word_done():
+                ending = True
+                play_game = False				
+                        
+            if jumper.is_dead():
+                play_game = False
+
+
+        console.display_ending(ending)				
